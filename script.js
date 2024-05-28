@@ -3,13 +3,25 @@ let input = document.getElementsByClassName('input')[0]
 let tasks = document.getElementsByClassName('tasks')[0]
 let select = document.getElementsByClassName('select')[0]
 let notes = JSON.parse(localStorage.getItem('notes')) || []
-let name = JSON.parse(localStorage.getItem('data')).name || ''
 let miniShop = document.getElementsByClassName('minicircle-shop')[0]
 let miniMoney = document.getElementsByClassName('minicircle-money')[0]
 let miniCelebraite = document.getElementsByClassName('minicircle-celebraite')[0]
 let logout = document.getElementsByClassName('logout')[0]
 let profile = document.getElementsByClassName('profile') [0]
+
+if(!localStorage.getItem('data')){
+    location.href = '/registration.html'
+
+}
+let name = JSON.parse(localStorage.getItem('data')).name || ''
+
+
 profile.textContent = name
+
+
+
+
+
 let numbers = {
     shop: 0,
     money: 0,
