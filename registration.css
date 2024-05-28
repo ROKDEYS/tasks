@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://s.tmimgcdn.com/scr/1200x627/372600/abstraktne-fonove-zobrazenna-14400x8100-pikseliv-iz-lotosom-u-bulbasci_372607-original.png);
+    background-size: 150%;
+    background-position: -200px -200px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #00000080;
+    padding: 30px;
+    border-radius: 15px;
+}
+input{
+    padding: 10px 15px;
+}
